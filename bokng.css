@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(images/tramp\ r3.jpg);
+    
+}
+
+.sign-up-form {
+    width: 500px;
+    height: 900px;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
+    background: #fff;
+    padding: 55px 80px;
+        margin: 5% auto 0;
+        margin-bottom: 5% auto 0;
+text-align: center;
+border-radius: 3%;
+}
+
+.sign-up-form h1 {
+    color: #ff00009f;
+    margin-bottom: 30px;
+}
+
+.input-box {
+
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #999;
+    outline: none;
+    border-radius: 40px;
+
+}
+
+button {
+
+
+    color: rgb(255, 0, 0);
+    width: 50%;
+    padding: 10px;
+   
+    font-size: 20px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.signup-btn
+{
+ background-color: #f6ff00;
+}
+a{
+   text-decoration: none;
+}
+.or{
+    background: #fff;
+    width: 30px;
+    margin: -19px auto 10px;
+
+}
+
+img{
+    width: 70px;
+}

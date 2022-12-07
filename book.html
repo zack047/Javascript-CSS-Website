@@ -1,0 +1,86 @@
+<html>
+	<head>
+        <link rel="stylesheet" href="/bokng.css">  
+
+		<script type="text/javascript">
+			function validatnme()
+     {
+    with(document.forms.register)
+    {
+        var no1= register.t1.value;
+        re=/[\d]/
+        if(re.test(no1))
+        {
+            alert("Invalid Firstname")
+        }
+		else{
+			alert("Valid FirstName");
+		}
+
+    }
+     }
+     function validateno()
+     {
+    with(document.forms.register)
+    {
+        var no= register.t2.value;
+        re=/[\D]/
+        if(re.test(no))
+		{
+			alert("InValid Phone Number");
+		}
+		else
+        {
+            alert("Valid Phone number")
+        }
+    
+
+    }
+     }
+     
+     function mail()
+     {
+        with(document.forms.register)
+        {
+            var mail=register.t4.value;
+            var pass=mail.indexOf('@gmail.com')
+            if(pass!=-1){
+				alert("Correct Email Id")
+			}
+            else
+            {
+                alert("Incorrect Email id")
+            }
+        }
+    
+     }
+
+     function display()
+     {
+        mail();
+        validateno();
+		validatnme();
+     }
+
+		</script>
+	</head>
+	<body>
+        <div class="sign-up-form">
+		<form name="register">
+			<h1> Book Your Appointment at Thoro<b>TT</b>le</h1>
+            <br><label>First Name:</label><br>
+            <input type="text" name="t1" class="input-box" placeholder="Enter your First Name"><br>
+            <br><label>Last Name:</label><br>
+            <input type="password" name="t3" class="input-box" placeholder="Enter Lastname" maxlength="8"class="input-box"><br>
+            <br><label>Contact No.</label><br>
+        <input type="text" name="t2" class="input-box" placeholder="Enter your Contact No. " maxlength="10" class="input-box" ><br>
+        <br><label>Email Id:</label><br>
+        <input type="email"  name="t4" class="input-box" placeholder="Enter Your Email"><br><br>
+        <label>Choose Your Date of VISIT</label>
+        <input type="date" class="input-box">
+        <br><br>
+        <button type="submit"  onclick="display()" class="signup-btn">Submit</button><br>    
+		</form>
+    </div>
+    </body>
+    </html>
